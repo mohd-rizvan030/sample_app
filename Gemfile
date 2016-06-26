@@ -43,6 +43,13 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+	gem 'minitest-reporters'
+	gem 'mini_backtrace'
+	# gem 'guard', '~> 2.13' # NOTE: this is necessary in newer versions
+	gem 'guard-minitest'
+end
+
 
 group :production do
 	gem 'rails_12factor', '0.0.2'
